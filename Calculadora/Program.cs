@@ -1,14 +1,16 @@
-﻿namespace Calculadora
+﻿
+namespace Calculadora
 {
     internal class Program
     {
         public static void Main()
         {
-            Console.WriteLine("Hello, World!");
 
             Console.WriteLine("Qual operação deseja fazer?");
             Console.WriteLine("1 - Divisão");
             Console.WriteLine("2 - Multiplicação");
+            Console.WriteLine("3 - Soma");
+            Console.WriteLine("4 - Subtração");
 
             int Operacao = int.Parse(Console.ReadLine());
 
@@ -30,10 +32,28 @@
                     resultado = Multiplicacao(num1, num2);
                     Console.WriteLine("Resultado da multiplicação: " + resultado);
                     break;
+                case 3: // Soma
+                    resultado = Soma(num1, num2);
+                    Console.WriteLine("Resultado da soma: " + resultado);
+                    break;
+                case 4: // Subtração
+                    resultado = Subtracao(num1, num2);
+                    Console.WriteLine("Resultado da subtração: " + resultado);
+                    break;
                 default:
                     Console.WriteLine("Operação inválida.");
                     break;
             }
+        }
+
+        private static int Subtracao(int num1, int num2)
+        {
+            return num1 - num2;
+        }
+
+        private static int Soma(int num1, int num2)
+        {
+            return num1 + num2;
         }
 
         // Método para realizar a divisão
