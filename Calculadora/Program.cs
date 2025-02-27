@@ -24,19 +24,19 @@ namespace Calculadora
 
             switch (Operacao)
             {
-                case 1: // Divisão
+                case 1:
                     resultado = Divisao(num1, num2);
                     Console.WriteLine("Resultado da divisão: " + resultado);
                     break;
-                case 2: // Multiplicação
+                case 2: 
                     resultado = Multiplicacao(num1, num2);
                     Console.WriteLine("Resultado da multiplicação: " + resultado);
                     break;
-                case 3: // Soma
+                case 3: 
                     resultado = Soma(num1, num2);
                     Console.WriteLine("Resultado da soma: " + resultado);
                     break;
-                case 4: // Subtração
+                case 4:
                     resultado = Subtracao(num1, num2);
                     Console.WriteLine("Resultado da subtração: " + resultado);
                     break;
@@ -56,7 +56,7 @@ namespace Calculadora
             return num1 + num2;
         }
 
-        // Método para realizar a divisão teste
+
         public static int Divisao(int num1, int num2)
         {
             if (num2 == 0)
@@ -67,7 +67,7 @@ namespace Calculadora
             return num1 / num2;
         }
 
-        // Método para realizar a multiplicação
+
         public static int Multiplicacao(int num1, int num2)
         {
             return num1 * num2;
