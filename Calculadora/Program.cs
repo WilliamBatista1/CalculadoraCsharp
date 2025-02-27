@@ -56,7 +56,7 @@ namespace Calculadora
             return num1 + num2;
         }
 
-        // Método para realizar a divisão
+        // Método para realizar a divisão teste
         public static int Divisao(int num1, int num2)
         {
             if (num2 == 0)
